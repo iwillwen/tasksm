@@ -17,5 +17,5 @@ TasksM.define('tasksm', {
   }
 })
 
-TasksM.useFile(path.resolve(__dirname, '../tasks.json'))
+TasksM.useFile(path.resolve(__dirname, '../taskshash.json'))
 TasksM.run()
