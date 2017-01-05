@@ -143,7 +143,7 @@ class TasksM {
                 const { patterns, taskHandler } = tasks.get(taskName);
                 return new Promise((resolve, reject) => {
                     const [supTaskName, subTaskName] = taskName.split(':');
-                    process.stdout.write(chalk.green('[INFO]') + chalk.white(` Running Task ${supTaskName} : ${subTaskName}...`));
+                    process.stdout.write(chalk.green('[INFO]') + chalk.white(` Running Task ${supTaskName}:${subTaskName}...`));
                     this.runTask(supTaskName, subTaskName, patterns, taskHandler, this.hashs.get(taskName))
                         .then(rtn => {
                         if (rtn === false) {
